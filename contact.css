@@ -72,8 +72,8 @@ header{
 .home-btn:hover{
     background:#0099cc;
 }
+
 /*PHONE*/
-@media (max-width: 767px) {
 header {
         flex-direction: column;
         background-color: rgba(0, 0, 0, 0.589); 
@@ -99,7 +99,7 @@ header {
     background-color:  rgba(0, 0, 0, 0.589);
     color: white;
     }
-}
+
 /*TABLET*/
 @media (min-width: 768px) and (max-width: 1023px) {
     header {
@@ -123,5 +123,30 @@ header {
 
     footer {
         background-color: rgb(65, 65, 255); 
+    }
+}
+/*DESKTOP*/
+@media (min-width: 1024px) {
+    header {
+        flex-direction: column;
+        background-color: maroon; 
+    }
+    .logo{
+    color: white;
+    }
+
+    .nav-links a{
+    color: white;
+    }
+
+    body {
+        background-color: rgb(252, 250, 250); 
+    }
+    .contact-container{
+    background-color:maroon;
+    }
+
+    footer {
+        background-color: maroon; 
     }
 }
