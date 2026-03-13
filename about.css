@@ -1,0 +1,137 @@
+/* GENERAL */
+
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:white;
+}
+
+/* HEADER */
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    background:maroon;
+    color:white;
+}
+
+.logo-container{
+    display:flex;
+    align-items:center;
+}
+
+.profile-pic{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    margin-right:10px;
+}
+
+.logo{
+    font-size:20px;
+}
+
+.nav-links{
+    list-style:none;
+    display:flex;
+    gap:20px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+}
+
+.nav-links a:hover{
+    color:#00c3ff;
+}
+
+/* ABOUT SECTION */
+
+.about-container{
+    max-width:700px;
+    margin:80px auto;
+    text-align:center;
+    background:maroon;
+    color: white;
+    padding:40px;
+    border-radius:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+
+.about-pic{
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    margin-bottom:20px;
+}
+
+.about-container h2{
+    margin-bottom:20px;
+}
+
+.about-container p{
+    font-size:18px;
+    line-height:1.6;
+}
+
+/*PHONE*/
+@media (max-width: 767px) {
+
+header {
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.589); 
+}
+
+.logo {
+    color: white;
+}
+
+.nav-links a {
+    color: white;
+}
+
+body {
+    background-color: white; 
+}
+
+.about-container {
+    background-color: rgba(0, 0, 0, 0.589);
+    color: white;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.589);
+    color: white;
+}
+
+}
+
+/*TABLET*/
+@media (min-width: 768px) and (max-width: 1023px) {
+    header {
+        flex-direction: column;
+        background-color: rgb(65, 65, 255); 
+    }
+    .logo{
+    color: white;
+    }
+
+    .nav-links a{
+    color: white;
+    }
+
+    body {
+        background-color: rgb(173, 173, 250); 
+    }
+    .about-container{
+    background-color: rgb(65, 65, 255);
+    }
+
+    footer {
+        background-color: rgb(65, 65, 255); 
+    }
+}
